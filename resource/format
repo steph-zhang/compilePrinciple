@@ -1,0 +1,23 @@
+stack<(word.type, position)> s;
+list<(word.value, position)> l;
+
+f(word.type) // 是否有另一半
+match(word.type) // 是否与栈顶元素类型匹配
+int p = 0 // 当前缩进位置
+
+if(!f(word.type))
+    p += 1
+    l.add((word.value, p))
+    if(word.type == ';')
+        换行
+if(!match(word.type) && f(word.type))
+    p += 1
+    push((word.type, p))
+    l.add(word.value, p)
+if(match(word.type))
+    word.position = s.top().position
+    pop()
+    p = s.top().position
+    l.add((word.value, p))
+
+format(l)

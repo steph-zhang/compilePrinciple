@@ -1,0 +1,1 @@
+int$jh70,$h,$uf1y,$o6;$jh70=708;$h=894;$uf1y=2;$o6=299;$o6=($o6+25)*97; if($h!=$uf1y+4)thenbegin$jh70=$o6*290;$uf1y=$jh70+6;end;else$uf1y=$h+94;while($uf1y>=$h+298)dobegin$jh70=$o6*21;$o6=$h*25;end;
